@@ -37,7 +37,7 @@ int main() {
 
     printf("Cadastro - carta 1: /n");
     printf("Digite o nome da cidade: /n");
-    scanf("%s", &cidade1);
+    scanf("%c", &cidade1);
     printf("Digite a população total: /n");
     scanf("%d", &populacao1);
     printf("Digite a área da cidade: /n");
@@ -45,7 +45,7 @@ int main() {
     printf("digite o PIB da cidade: /n");
     sncaf("%f", &pib1);
     printf("Digite o número de pontos turísticos: /n");
-    
+    scanf("%d", &pontos_turisticos1);
 
     return 0;
 }

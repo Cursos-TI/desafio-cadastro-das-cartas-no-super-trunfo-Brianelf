@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
@@ -35,17 +36,45 @@ int main() {
     float pib1;
     int pontos_turisticos1;
 
-    printf("Cadastro - carta 1: /n");
-    printf("Digite o nome da cidade: /n");
-    scanf("%c", &cidade1);
-    printf("Digite a população total: /n");
+    //carta 2
+    char cidade2[20];
+    int populacao2;
+    float area2;
+    float pib2;
+    int pontos_turisticos2;
+    
+    //cadastro com os dados da primeira carta
+    printf("-----------Cadastro - CARTA 1----------- \n \n");
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", cidade1);
+    printf("Digite a população total: \n");
     scanf("%d", &populacao1);
-    printf("Digite a área da cidade: /n");
+    printf("Digite a area da cidade: \n");
     scanf("%f", &area1);
-    printf("digite o PIB da cidade: /n");
-    sncaf("%f", &pib1);
-    printf("Digite o número de pontos turísticos: /n");
+    printf("digite o PIB da cidade: \n");
+    scanf("%f", &pib1);
+    printf("Digite o numero de pontos turisticos: \n");
     scanf("%d", &pontos_turisticos1);
 
+    //SAÍDA DE DADOS DA PRIMEIRA CARTA
+    printf("------DADOS DA CARTA 1------ \n -Cidade: %s  \n -Populacao: %d \n -Area: %f \n -PIB: %f \n -Pontos turisticos: %d \n \n", cidade1,populacao1,area1,pib1,pontos_turisticos1);
+
+
+
+    //cadastro com os dados da segunda carta
+    printf("-----------Cadastro - CARTA 2-----------\n \n");
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", cidade2);
+    printf("Digite a população total: \n");
+    scanf("%d", &populacao2);
+    printf("Digite a area da cidade: \n");
+    scanf("%f", &area2);
+    printf("digite o PIB da cidade: \n");
+    scanf("%f", &pib2);
+    printf("Digite o numero de pontos turisticos: \n");
+    scanf("%d", &pontos_turisticos2);
+
+    //DADOS DE SAIDA DA SEGUNDA CARTA
+    printf("------DADOS DA CARTA 2------  \n -Cidade: %s  \n -Populacao: %d \n -Area: %f \n -PIB: %f \n -Pontos turisticos: %d \n \n", cidade2,populacao2,area2,pib2,pontos_turisticos2);
     return 0;
 }
